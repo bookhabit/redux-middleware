@@ -5,8 +5,8 @@ const Sample = ({ loadingPost, loadingUsers, post, users }) => {
     <div>
       <section>
         <h1>포스트</h1>
-        {console.log(post)}
-        {console.log(users)}
+        {/* {console.log(post)}
+        {console.log(users)} */}
         {loadingPost && "로딩중..."}
         {/* // 로딩이 끝나고 post에 데이터가 들어오면 렌더링 */}
         {!loadingPost && post && (

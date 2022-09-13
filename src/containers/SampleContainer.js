@@ -18,7 +18,7 @@ const SampleContainer = ({
     getPost(1);
     getUsers(1);
   }, [getPost, getUsers]);
-  console.log("SampleContainer", post);
+  // console.log("SampleContainer", post);
   return (
     <Sample
       post={post}
@@ -34,8 +34,8 @@ export default connect(
   ({ sample }) => ({
     post: sample.post,
     users: sample.users,
-    loadingPost: sample.loading.GET_POST,
-    loadingUsers: sample.loading.GET_USERS,
+    loadingPost: sample.loading["sample/GET_POST"],
+    loadingUsers: sample.loading["sample/GET_USERS"],
   }),
   // 액션생성함수를 컴포넌트의 props로 넘겨줌
   {
